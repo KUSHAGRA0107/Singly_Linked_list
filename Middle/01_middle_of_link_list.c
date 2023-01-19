@@ -27,7 +27,8 @@ void Middle()
 {
     struct node* fast=head;
     struct node* slow=head;
-    while(fast!=NULL)
+    //balanced for both odd and even sized Linked List
+    while(fast->next!=NULL && (fast->next)->next!=NULL)
 {
     fast=(fast->next)->next;
 
